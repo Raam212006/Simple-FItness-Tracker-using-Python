@@ -1,15 +1,15 @@
 # Simple-FItness-Tracker-using-Python
-import json
-from datetime import datetime, timedelta
+    import json
+    from datetime import datetime, timedelta
 
-class FitnessTracker:
-    def __init__(self, user_name):
-        self.user_name = user_name
-        self.workouts = []
-        self.goals = {}
-        self.calories_burned = 0
-        self.calories_intake = []
-        self.reminders = []
+    class FitnessTracker:
+        def __init__(self, user_name):
+            self.user_name = user_name
+            self.workouts = []
+            self.goals = {}
+            self.calories_burned = 0
+            self.calories_intake = []
+            self.reminders = []
 
     def log_workout(self, workout_type, duration, calories):
         """Log a workout with type, duration, and calories burned."""
